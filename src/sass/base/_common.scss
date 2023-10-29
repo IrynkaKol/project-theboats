@@ -3,7 +3,7 @@
 $font-stack: (
   primary: 'Poppins, sans-serif',
   // font Poppins
-  secondary: 'Inter Tight, sans-serif' // font Inter Tight,,
+  secondary: 'Inter Tight, sans-serif' // font Inter Tight,,,
 );
 
 ul,
@@ -56,4 +56,13 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+button,
+input[type='submit'] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
 }
