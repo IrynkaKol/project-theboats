@@ -1,8 +1,8 @@
 {
-  "name": "parcel-project-template",
+  "name": "project-theboats",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/IrynkaKol/project-theboats",
+  "homepage": "https://github.com/irynkakol/project-theboats",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /project-theboats/"
