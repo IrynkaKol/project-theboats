@@ -1,5 +1,11 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+$font-stack: (
+  primary: 'Poppins, sans-serif',
+  // font Poppins
+  secondary: 'Inter Tight, sans-serif' // font Inter Tight,,
+);
+
 ul,
 ol {
   padding: 0;
@@ -27,11 +33,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: (
-    primary: 'Poppins, sans-serif',
-    // font Poppins
-    secondary: 'Inter Tight, sans-serif' // font Inter Tight
-  );
+  font-family: map-get($font-stack, primary);
 }
 
 ul,
