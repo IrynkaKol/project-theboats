@@ -1,4 +1,4 @@
-<svg display="none" xmlns="http://www.w3.org/2000/svg">
+<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <symbol id="logo" viewBox="0 0 256 99">
             <g clip-path="url(#a)">
@@ -93,7 +93,7 @@
 
 
         <symbol id="share" viewBox="0 0 37 37">
-            <path class="share"
+            <path
                 d="M.238 18.5c0-9.942 8.06-18 18-18 9.941 0 18 8.058 18 18 0 9.941-8.059 18-18 18-9.94 0-18-8.059-18-18Z" />
             <path
                 d="M10.867 22.468a3.904 3.904 0 1 0 0-7.808 3.904 3.904 0 0 0 0 7.808ZM22.785 15.528a3.904 3.904 0 1 0 0-7.808 3.904 3.904 0 0 0 0 7.808ZM22.785 29.28a3.904 3.904 0 1 0 0-7.808 3.904 3.904 0 0 0 0 7.808Z"
