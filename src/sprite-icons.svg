@@ -1,8 +1,7 @@
 <svg display="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <symbol id="logo" viewBox="0 0 256 99">
         <g clip-path="url(#clip0_968_526)">
-            <mask id="mask0_968_526" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="0" y="-71" width="255"
-                height="256">
+            <mask id="mask0_968_526" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="0" y="-71" height="256">
                 <path d="M254.893 -70.5H0V184.393H254.893V-70.5Z" fill="white" />
             </mask>
             <g mask="url(#mask0_968_526)">
