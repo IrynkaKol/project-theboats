@@ -33,6 +33,12 @@ body {
   background-color: var(--beige);
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+}
+
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
