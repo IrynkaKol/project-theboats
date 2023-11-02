@@ -89,7 +89,7 @@
   &__slider {
     //border: solid 3px red;
     display: flex;
-    max-width: 1389px;
+    width: 1389px;
 
     flex-direction: column;
     align-items: center;
@@ -97,16 +97,18 @@
 
     overflow: hidden;
   }
-  &__slider img {
-    width: 84px;
-    height: 84px;
-  }
 
   &__slider-line {
-    // border: solid 3px red;
+    border: solid 3px red;
     display: flex;
     background-color: rgba(128, 128, 128, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+
     transition: all ease 1s;
+
+    border-radius: 20px;
+    border: 1px solid var(--Black-1, #151515);
   }
 
   &__slider-btn {

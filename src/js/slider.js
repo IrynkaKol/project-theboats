@@ -12,7 +12,7 @@ images.forEach(item =>{
     item.style.height = 'auto'
 })
 rollSlider()
-// console.log(width)
+ console.log(width)
 }
 
 
