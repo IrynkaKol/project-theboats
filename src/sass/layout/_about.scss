@@ -85,6 +85,55 @@
     font-weight: 400;
     line-height: normal;
   }
+
+  &__slider {
+    //border: solid 3px red;
+    display: flex;
+    max-width: 1389px;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    overflow: hidden;
+  }
+  &__slider img {
+    width: 84px;
+    height: 84px;
+  }
+
+  &__slider-line {
+    // border: solid 3px red;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.5);
+    transition: all ease 1s;
+  }
+
+  &__slider-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+  }
+  &__slider-left,
+  &__slider-right {
+    padding: 0;
+    border: 2px solid var(--greyGold);
+    border-radius: 50%;
+    width: 84px;
+    height: 84px;
+    background-color: transparent;
+    color: var(--black1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__slider-icon {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .about__content ul {
