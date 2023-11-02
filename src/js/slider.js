@@ -19,7 +19,7 @@ rollSlider()
  window.addEventListener('resize', init);
  init ()
 
- document.querySelector('.about__slider-left').addEventListener('click', function(){
+ document.querySelector('.about__slider-right').addEventListener('click', function(){
     count --;
     if (count < 0) {
         count = images.length - 1
@@ -29,7 +29,7 @@ rollSlider()
 
  });
 
- document.querySelector('.about__slider-wright').addEventListener('click', function(){
+ document.querySelector('.about__slider-left').addEventListener('click', function(){
     count ++;
     if (count >= images.length) {
         count = 0
