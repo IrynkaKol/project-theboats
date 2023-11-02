@@ -99,7 +99,6 @@
   }
 
   &__slider-line {
-    border: solid 3px red;
     display: flex;
     background-color: rgba(128, 128, 128, 0.5);
     background-repeat: no-repeat;
@@ -107,8 +106,8 @@
 
     transition: all ease 1s;
 
-    border-radius: 20px;
-    border: 1px solid var(--Black-1, #151515);
+    // border-radius: 20px;
+    // border: 1px solid var(--black-);
   }
 
   &__slider-btn {
@@ -174,4 +173,9 @@
     font-weight: 500;
     line-height: normal;
   }
+}
+
+.about__slider-line img:first-child {
+  border-radius: 20px;
+  border: 1px solid var(--black-);
 }
