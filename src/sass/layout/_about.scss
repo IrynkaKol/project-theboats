@@ -14,32 +14,18 @@
   }
 
   &__title {
+    @include font-styles-title;
     width: 520px;
 
     color: var(--gray-warm, #3f3f3f);
     text-align: center;
     font-feature-settings: 'salt' on;
-
-    font-family: var(--secondary-font);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: 3.2px;
-    text-transform: uppercase;
   }
   &__title-text {
+    @include font-styles-text-38;
+
     width: 1710px;
-
     color: var(--black2);
-    text-align: center;
-
-    font-family: var(--main-font);
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.76px;
   }
   &__content {
     display: flex;
@@ -59,18 +45,11 @@
   }
 
   &__content-title {
+    @include font-styles-title;
     width: 520px;
 
     color: var(--greyWarm);
     font-feature-settings: 'salt' on;
-
-    font-family: var(--secondary-font);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: 3.2px;
-    text-transform: uppercase;
   }
 
   &__content-text {
