@@ -5,12 +5,15 @@ let width;
 
 function init() {
 console.log('resize')
+
 width = document.querySelector('.about__slider').offsetWidth;
-sliderLine.style.width = width * images.length + 'px';
+
 images.forEach(item =>{
-    item.style.width = width + 'px'
+    console.log('item', item.offsetWidth);
+    item.style.width = width + 'px';
     item.style.height = 'auto'
 })
+sliderLine.style.width = width * images.length + 'px';
 rollSlider()
  console.log(width)
 }
@@ -20,9 +23,13 @@ rollSlider()
  init ()
 
  document.querySelector('.about__slider-right').addEventListener('click', function(){
-    count --;
-    if (count < 0) {
-        count = images.length - 1
+    // count --;
+    // if (count < 0) {
+    //     count = images.length - 1
+    // }
+    count ++;
+    if (count >= images.length) {
+        count = 0
     }
 
     rollSlider()
@@ -30,9 +37,13 @@ rollSlider()
  });
 
  document.querySelector('.about__slider-left').addEventListener('click', function(){
-    count ++;
-    if (count >= images.length) {
-        count = 0
+    // count ++;
+    // if (count >= images.length) {
+    //     count = 0
+    // }
+    count --;
+    if (count < 0) {
+        count = images.length - 1
     }
 
     rollSlider()
