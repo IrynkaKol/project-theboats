@@ -30,15 +30,7 @@
 .header-item {
   // color: var(--Black2);
   text-align: center;
-
-  /* Body Text, 22PX TEXT */
-  font-family: Poppins;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.5; /* 24.2px */
-  letter-spacing: -0.44px;
-  text-transform: uppercase;
+  @include font-styles-body;
 }
 
 .header-link {

@@ -142,6 +142,15 @@
     width: 34px;
     height: 34px;
   }
+
+  &__button {
+    @include main-btn-styles;
+    @include font-styles-body;
+    width: 326px;
+    height: 72px;
+
+    color: var(--white);
+  }
 }
 
 .about__content ul {
