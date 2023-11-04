@@ -52,23 +52,23 @@
     height: 721px;
     padding: 140px;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    gap: 252px;
+    // gap: 252px;
 
     border-radius: 20px;
     border: 1px solid var(--black1);
   }
 
-  &__text-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 38px;
-
-    list-style-type: disc;
-  }
+  // &__text-info {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  //   gap: 38px;
+  // }
 
   &__text-item {
+    width: 450px;
     color: var(--grayWarm);
     text-align: center;
 
@@ -79,6 +79,9 @@
     font-weight: 500;
     line-height: 1.1;
     font-variant: all-small-caps;
+
+    // display: flex;
+    //text-align: center;
   }
 
   &__tariff {
@@ -90,7 +93,8 @@
   }
   &__tariff-header {
     position: absolute;
-    right: 232px;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 318px;
 
     color: var(--black1);
@@ -146,6 +150,14 @@
 }
 
 .suite__text-info .suite__text-item::before {
-  content: '•'; /* Встановлення бажаного маркера */
-  margin-right: 5px; /* Додатковий відступ для маркера */
+  content: '•';
+  margin-right: 5px;
+}
+
+.suites .suite__text-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 38px;
 }
