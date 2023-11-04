@@ -1,5 +1,4 @@
 .contacts {
-  border: solid 3px black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,7 +6,6 @@
   gap: 100px;
 
   &__title-wrap {
-    border: solid 3px navy;
     display: flex;
     //width: 1920px;
     flex-direction: column;
@@ -46,13 +44,53 @@
     letter-spacing: -0.76px;
   }
 
-  &__content {
-    border: solid 3px red;
+  &__content-list {
     display: flex;
-    width: 1920px;
     padding: 100px;
     justify-content: center;
     align-items: flex-end;
     gap: 206px;
+  }
+
+  &__content-item {
+    display: flex;
+    height: 187px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 68px;
+
+    border-bottom: 1px solid var(--black1);
+  }
+  &__content-title {
+    width: 57px;
+    height: 95px;
+    flex-shrink: 0;
+
+    color: var(--grayWarm);
+    font-feature-settings: 'salt' on;
+
+    /* Heading/16px Text Example/Medium */
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.32px;
+  }
+
+  &__content-text {
+    width: 292px;
+
+    color: var(--black2);
+    font-feature-settings: 'salt' on;
+
+    /* Body Text, 22 Px Text Example/Medium */
+    font-family: var(--main-font);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
   }
 }
