@@ -63,6 +63,11 @@
 
     border-bottom: 1px solid var(--black1);
   }
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+  }
   &__content-title {
     width: 57px;
     height: 95px;
