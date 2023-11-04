@@ -48,7 +48,10 @@
     display: flex;
     padding: 100px;
     justify-content: center;
+
     align-items: flex-end;
+    justify-content: space-between;
+    align-items: stretch;
     gap: 206px;
   }
 
@@ -60,17 +63,20 @@
     justify-content: flex-end;
     align-items: flex-start;
     gap: 68px;
+    align-items: stretch;
+    height: 100%;
 
     border-bottom: 1px solid var(--black1);
   }
   &__wrap {
     display: flex;
     flex-direction: column;
+    height: 187px;
     gap: 68px;
   }
   &__content-title {
     width: 57px;
-    height: 95px;
+    height: 71px;
     flex-shrink: 0;
 
     color: var(--grayWarm);
@@ -98,4 +104,8 @@
     font-weight: 500;
     line-height: 1.1;
   }
+}
+
+.contacts__content-item:first-child .contacts__content-title {
+  height: 95px;
 }
