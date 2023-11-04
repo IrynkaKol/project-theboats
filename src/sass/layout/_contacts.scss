@@ -1,0 +1,58 @@
+.contacts {
+  border: solid 3px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+
+  &__title-wrap {
+    border: solid 3px navy;
+    display: flex;
+    //width: 1920px;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+  &__title {
+    width: 520px;
+
+    color: var(--grayWarm);
+    text-align: center;
+    font-feature-settings: 'salt' on;
+
+    /* Heading2/20px Text Example/Bold */
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+  }
+
+  &__title-text {
+    width: 1471px;
+
+    color: var(--black2);
+    text-align: center;
+
+    /* Body Text, 38 Px Text Example */
+    font-family: var(--main-font);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.76px;
+  }
+
+  &__content {
+    border: solid 3px red;
+    display: flex;
+    width: 1920px;
+    padding: 100px;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 206px;
+  }
+}
