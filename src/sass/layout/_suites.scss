@@ -44,14 +44,11 @@
     align-content: flex-start;
     gap: 60px;
     flex-wrap: wrap;
-
-    // border-radius: 20px;
-    // border: 1px solid var(--black-1);
-    // background: var(--beige);
   }
 
   &__card {
     display: flex;
+    position: relative;
     height: 721px;
     padding: 140px;
     flex-direction: column;
@@ -76,12 +73,67 @@
     text-align: center;
 
     /* Body Text, 28Px Text Example/Medium */
-    font-family: Poppins;
+    font-family: var(--main-font);
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.1;
     font-variant: all-small-caps;
+  }
+
+  &__tariff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+  &__tariff-header {
+    position: absolute;
+    right: 232px;
+    bottom: 318px;
+
+    color: var(--black1);
+    text-align: center;
+    font-feature-settings: 'salt' on;
+
+    /* Heading/48px Text Example/Bold */
+    font-family: var(--secondary-font);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+  }
+  &__tariff-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  &__tariff-text {
+    width: 222px;
+
+    color: var(--black2);
+    text-align: center;
+
+    /* Body Text, 28Px Text Example/Medium */
+    font-family: var(--main-font);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+    // font-variant: all-small-caps;
+  }
+  &__tariff-btn {
+    @include main-btn-styles;
+    @include font-styles-body;
+    width: 240px;
+    height: 72px;
+
+    color: var(--White, #fff);
   }
 }
 
