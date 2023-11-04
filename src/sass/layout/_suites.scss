@@ -44,6 +44,10 @@
     align-content: flex-start;
     gap: 60px;
     flex-wrap: wrap;
+
+    // border-radius: 20px;
+    // border: 1px solid var(--black-1);
+    // background: var(--beige);
   }
 
   &__card {
@@ -55,7 +59,41 @@
     gap: 252px;
 
     border-radius: 20px;
-    border: 1px solid var(--black-1);
-    background: var(--beige);
+    border: 1px solid var(--black1);
   }
+
+  &__text-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 38px;
+
+    list-style-type: disc;
+  }
+
+  &__text-item {
+    color: var(--grayWarm);
+    text-align: center;
+
+    /* Body Text, 28Px Text Example/Medium */
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+    font-variant: all-small-caps;
+  }
+}
+
+.suite__text-info--bulleted {
+  text-align: center;
+}
+
+.suite__text-info .suite__text-item {
+  white-space: nowrap;
+}
+
+.suite__text-info .suite__text-item::before {
+  content: '•'; /* Встановлення бажаного маркера */
+  margin-right: 5px; /* Додатковий відступ для маркера */
 }
