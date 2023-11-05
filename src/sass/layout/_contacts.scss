@@ -92,7 +92,7 @@
   }
 
   &__content-text {
-    width: 292px;
+    width: 263px;
 
     color: var(--black2);
     font-feature-settings: 'salt' on;
@@ -108,4 +108,8 @@
 
 .contacts__content-item:first-child .contacts__content-title {
   height: 95px;
+}
+
+.contacts__content-title.contact__adress {
+  height: 47px;
 }
